@@ -1,10 +1,13 @@
 name: Pack source
 
+env:
+
 on:
     push:
         branches: [gh_actions_test, main]
     pull_request_target:
         branches: [main]
+    workflow_dispatch:
 
 jobs:
     build:
