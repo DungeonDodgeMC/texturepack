@@ -29,12 +29,6 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
-            - name: Download build artifact from build job
-              uses: actions/download-artifact@v2
-              with:
-                name: Release
-                path: artifacts/
-
             - name: Install Zip
               uses: montudor/action-zip@v1
 
