@@ -36,6 +36,7 @@ jobs:
               uses: ncipollo/release-action@v1
               with:
                 artifacts: "../DungeonDodgePack.zip"
+                tag: "${{ github.action_ref }}"
                 name: "Pack update ([${{ github.event.head_commit.id }}](${{ github.event.head_commit.url }}))"
                 body: "Pack update"
                 makeLatest: true
