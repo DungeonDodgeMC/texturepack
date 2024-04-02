@@ -1,0 +1,44 @@
+name: Pack source
+
+on:
+    push:
+        branches: [gh_actions_test, main]
+    pull_request_target:
+        branches: [main]
+
+jobs:
+    build:
+        runs-on: windows-latest
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Pack DungeonDodgePack
+              shell: bash
+              run: |
+                echo "Zipping DungeonDodgePack"
+                7z a DungeonDodgePack.zip ./DungeonDodgePack/
+
+    deploy:
+        needs: build
+        name: Deploy to Github Releases
+        runs-on: ubuntu-latest
+        strategy:
+            fail-fast: false
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Install Zip
+              uses: montudor/action-zip@v1
+
+            - name: Zip Artifacts
+              working-directory: /home/runner/work/DungeonDodgeMC/texturepack/artifacts/
+              run: |
+                cd DungeonDodgePack; zip -qq -r ../DungeonDodgePack.zip .; cd ..
+
+            - name: Make a release
+              uses: ncipollo/release-action
+              with:
+                artifacts: "/home/runner/work/DungeonDodgeMC/texturepack/artifacts/DungeonDodgePack.zip"
+                name: "Pack update ([${{ github.event.head_commit.id }}](${{ github.event.head_commit.url }}))"
+                body: "Pack update"
