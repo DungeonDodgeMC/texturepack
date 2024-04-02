@@ -24,6 +24,7 @@ jobs:
         needs: build
         name: Deploy to Github Releases
         runs-on: ubuntu-latest
+        permissions: write-all
         strategy:
             fail-fast: false
         steps:
