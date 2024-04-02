@@ -38,6 +38,6 @@ jobs:
               with:
                 artifacts: "../DungeonDodgePack.zip"
                 tag: "tEsT"
-                name: "Pack update ([${{ github.event.head_commit.id }}](${{ github.event.head_commit.url }}))"
-                body: "Pack update"
+                name: "Pack update (${{ github.event.head_commit.id }})"
+                body: "Pack update (${{ github.ref }})"
                 makeLatest: true
