@@ -12,6 +12,8 @@ jobs:
         runs-on: windows-latest
 
         steps:
+            - uses: actions/checkout@v3
+            
             - name: Pack DungeonDodgePack
               shell: bash
               run: |
@@ -25,6 +27,8 @@ jobs:
         strategy:
             fail-fast: false
         steps:
+            - uses: actions/checkout@v3
+
             - name: Install Zip
               uses: montudor/action-zip@v1
 
