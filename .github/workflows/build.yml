@@ -19,12 +19,20 @@ jobs:
               run: |
                 echo "Zipping DungeonDodgePack"
                 7z a DungeonDodgePack.zip ./DungeonDodgePack/
+                
+            - name: Make a release
+              uses: ncipollo/release-action@v1
+              with:
+                artifacts: "../DungeonDodgePack.zip"
+                tag: "${{ hashFiles(github.event.head_commit.modified) }}"
+                name: "Pack update (${{ github.event.head_commit.timestamp }})"
+                body: "Pack update (${{ github.ref }})"
+                makeLatest: true
 
     deploy:
         needs: build
         name: Deploy to Github Releases
         runs-on: ubuntu-latest
-        permissions: write-all
         strategy:
             fail-fast: false
         steps:
@@ -32,12 +40,3 @@ jobs:
 
             - name: Install Zip
               uses: montudor/action-zip@v1
-
-            - name: Make a release
-              uses: ncipollo/release-action@v1
-              with:
-                artifacts: "../DungeonDodgePack.zip"
-                tag: "${{ github.event.head_commit.id }}"
-                name: "Pack update (${{ github.event.head_commit.timestamp }})"
-                body: "Pack update (${{ github.ref }})"
-                makeLatest: true
