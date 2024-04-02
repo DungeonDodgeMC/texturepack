@@ -19,26 +19,6 @@ jobs:
               run: |
                 echo "Zipping DungeonDodgePack"
                 7z a DungeonDodgePack.zip ./DungeonDodgePack/
-                
-            - name: Get Version tag for Release
-              id: version2
-              shell: bash
-              run: |
-                echo "Attempting get current version id"
-                version=$(git describe --tags --abbrev=0)
-                echo "Current Version is: $version"
-                echo "::set-output name=new_version::$version"
-              env:
-                branch: ${{github.ref}}
-                
-            - name: Make a release
-              uses: ncipollo/release-action@v1
-              with:
-                artifacts: "../DungeonDodgePack.zip"
-                tag: "${{ steps.version2.outputs.new_version }}"
-                name: "Pack update (${{ github.event.head_commit.timestamp }})"
-                body: "Pack update (${{ github.ref }})"
-                makeLatest: true
 
     deploy:
         needs: build
@@ -49,5 +29,25 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
+            - name: Get Version tag for Release
+              id: version2
+              shell: bash
+              run: |
+                echo "Attempting get current version id"
+                version=$(git describe --tags --abbrev=0)
+                echo "Current Version is: $version"
+                echo "::set-output name=new_version::$version"
+                env:
+                branch: ${{github.ref}}
+                
             - name: Install Zip
               uses: montudor/action-zip@v1
+                
+            - name: Make a release
+              uses: ncipollo/release-action@v1
+              with:
+                artifacts: "../DungeonDodgePack.zip"
+                tag: "${{ steps.version2.outputs.new_version }}"
+                name: "Pack update (${{ github.event.head_commit.timestamp }})"
+                body: "Pack update (${{ github.ref }})"
+                makeLatest: true
