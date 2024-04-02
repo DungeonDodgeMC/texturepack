@@ -13,7 +13,7 @@ jobs:
 
         steps:
             - uses: actions/checkout@v3
-            
+
             - name: Pack DungeonDodgePack
               shell: bash
               run: |
@@ -29,6 +29,11 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
+            - name: Download temporary encrypted src artifact from build job
+              uses: actions/download-artifact@v2
+              with:
+                name: temporary-sr
+
             - name: Install Zip
               uses: montudor/action-zip@v1
 
@@ -41,7 +46,6 @@ jobs:
               uses: ncipollo/release-action@v1
               with:
                 artifacts: "/home/runner/work/DungeonDodgeMC/texturepack/artifacts/DungeonDodgePack.zip"
-                token: ${{ secrets.GITHUB_TOKEN }}
                 name: "Pack update ([${{ github.event.head_commit.id }}](${{ github.event.head_commit.url }}))"
                 body: "Pack update"
                 makeLatest: true
