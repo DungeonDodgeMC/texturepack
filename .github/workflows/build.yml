@@ -37,5 +37,7 @@ jobs:
               uses: ncipollo/release-action@v1
               with:
                 artifacts: "/home/runner/work/DungeonDodgeMC/texturepack/artifacts/DungeonDodgePack.zip"
+                token: ${{ secrets.GITHUB_TOKEN }}
                 name: "Pack update ([${{ github.event.head_commit.id }}](${{ github.event.head_commit.url }}))"
                 body: "Pack update"
+                makeLatest: true
