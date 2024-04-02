@@ -1,7 +1,5 @@
 name: Pack source
 
-env:
-
 on:
     push:
         branches: [gh_actions_test, main]
@@ -27,8 +25,8 @@ jobs:
         strategy:
             fail-fast: false
         steps:
-            #- name: Install Zip
-            #  uses: montudor/action-zip@v1
+            - name: Install Zip
+              uses: montudor/action-zip@v1
 
             - name: Zip Artifacts
               working-directory: /home/runner/work/DungeonDodgeMC/texturepack/artifacts/
@@ -36,7 +34,7 @@ jobs:
                 cd DungeonDodgePack; zip -qq -r ../DungeonDodgePack.zip .; cd ..
 
             - name: Make a release
-              uses: ncipollo/release-action
+              uses: ncipollo/release-action@v1
               with:
                 artifacts: "/home/runner/work/DungeonDodgeMC/texturepack/artifacts/DungeonDodgePack.zip"
                 name: "Pack update ([${{ github.event.head_commit.id }}](${{ github.event.head_commit.url }}))"
