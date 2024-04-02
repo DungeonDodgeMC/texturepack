@@ -29,10 +29,11 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
-            - name: Download temporary encrypted src artifact from build job
+            - name: Download build artifact from build job
               uses: actions/download-artifact@v2
               with:
-                name: temporary-sr
+                name: Release
+                path: artifacts/
 
             - name: Install Zip
               uses: montudor/action-zip@v1
