@@ -91,5 +91,11 @@ jobs:
                 ${{ secrets.NOTIFY_CHANNEL }}
                 -F 'payload_json="{
                     "author": "test",
-                    "title": "hello"
+                    "title": "hello",
+                    "fields": [
+                        {
+                            "title": "Branch",
+                            "description": "Test"
+                        }
+                    ]
                 }"'
