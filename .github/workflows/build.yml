@@ -86,7 +86,7 @@ jobs:
               shell: pwsh
               run: >
                 curl \
-                -F "file=${{ env.DUNGEONDODGEPACK }}" \
+                -F "file=${{ env.DUNGEONDODGEPACK }}"
                 -F 'payload_json={\"embeds\": [{
                     \"title\": \"Texture Pack Update\",
                     \"description\": \"${{ env.DESCRIPTION }}\",
@@ -107,5 +107,5 @@ jobs:
                         \"inline\": true
                       }
                     ]
-                }]} \
+                }]}
                 ${{ secrets.NOTIFY_CHANNEL }}'
