@@ -88,6 +88,6 @@ jobs:
                 curl
                 -F "file=${{ env.DUNGEONDODGEPACK }}"
                 ${{ secrets.NOTIFY_CHANNEL }}
-                -F 'payload_json=\"{\"embeds\":[{
+                -F 'payload_json=\'{\"embeds\":[{
                     \"title\": \"Texture Pack Update\"
-                }]}\"'
+                }]}\''
