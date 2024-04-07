@@ -21,7 +21,7 @@ jobs:
               shell: bash
               run: |
                 echo "Zipping DungeonDodgePack"
-                7z a DungeonDodgePack.zip ./DungeonDodgePack/
+                7z a DungeonDodgePack.zip ./DungeonDodgePack/**
                 
             - name: Upload DungeonDodgePack
               uses: actions/upload-artifact@v4
@@ -98,11 +98,10 @@ jobs:
                         "name": "Commit",
                         "value": "[`${{ env.COMMIT_SHORT }}`](https://github.com/DungeonDodgeMC/texturepack/commit/${{ env.COMMIT_LONG }})",
                         "inline": true
-                    }],
-
-                    "attachments": [{
-                        "id": 0,
-                        "filename": "DungeonDodgePack.zip",
-                        "url": "https://github.com/DungeonDodgeMC/texturepack/releases/download/${{ github.run_number }}/DungeonDodgePack.zip"
+                    },
+                    {
+                        "name": "Download DungeonDodgePack",
+                        "value": "[Link](https://github.com/DungeonDodgeMC/texturepack/releases/download/${{ github.run_number }}/DungeonDodgePack.zip)",
+                        "inline": true
                     }]
                 }]}'
