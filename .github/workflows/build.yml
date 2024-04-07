@@ -22,9 +22,8 @@ jobs:
               run: |
                 echo "Zipping DungeonDodgePack"
                 7z a DungeonDodgePack.zip ./DungeonDodgePack/
-                
-                echo "Moving $(./DungeonDodgePack/DungeonDodgePack.zip) to $(@$env:UserProfile/DungeonDodgePack/DungeonDodgePack.zip)"
-                move ./DungeonDodgePack/DungeonDodgePack.zip @$env:UserProfile/DungeonDodgePack/DungeonDodgePack.zip
+
+                echo "$(./DungeonDodgePack.zip)"
 
     post:
         needs: build
