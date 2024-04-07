@@ -35,10 +35,7 @@ jobs:
 
         name: Deploy to Github Releases
         permissions: write-all
-
-        strategy:
-            fail-fast: false
-
+        
         steps:
             - uses: actions/checkout@v3
 
@@ -65,9 +62,6 @@ jobs:
 
         name: Deploy to Discord
         permissions: write-all
-
-        strategy:
-            fail-fast: false
 
         steps:
             - uses: actions/checkout@v3
