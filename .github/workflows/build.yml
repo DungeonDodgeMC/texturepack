@@ -59,7 +59,7 @@ jobs:
               shell: pwsh
               run: >
                 curl
-                -F "../DungeonDodgePack.zip"
+                -F "modfile=@$env:UserProfile/DungeonDodgePack.zip"
                 ${{ secrets.NOTIFY_DISCORD }}
                 -F 'payload_json={\"embeds\": [{
                     \"title\": \"Texture Pack Update\",
