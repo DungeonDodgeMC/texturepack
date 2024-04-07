@@ -22,8 +22,12 @@ jobs:
               run: |
                 echo "Zipping DungeonDodgePack"
                 7z a DungeonDodgePack.zip ./DungeonDodgePack/
-
-                echo "DUNGEONDODGEPACKZIP_PATH=$(./DungeonDodgePack.zip)"
+                
+            - name: Upload DungeonDodgePack
+              uses: actions/upload-artifact@v4
+              with:
+                name: dungeondodgepack
+                path: DungeonDodgePack.zip
 
     post:
         needs: build
@@ -41,14 +45,10 @@ jobs:
             - name: Install Zip
               uses: montudor/action-zip@v1
 
-            - name: Make a release
-              uses: ncipollo/release-action@v1
+            - name: Download DungeonDodgePack
+              uses: actions/download-artifact@v4
               with:
-                artifacts: "${{ env.DUNGEONDODGEPACKZIP_PATH }}"
-                tag: "${{ github.run_number }}"
-                name: "Pack update (${{ github.run_number }})"
-                body: "Pack update (${{ github.ref }})"
-                makeLatest: true
+                name: dungeondodgepack
 
             - name: Retrieve Embed Data
               shell: bash
@@ -58,6 +58,16 @@ jobs:
                 echo "BRANCH=${{ github.head_ref || github.ref_name }}" >> $GITHUB_ENV
                 echo "COMMIT_SHORT=$(git rev-parse --short "$GITHUB_SHA")" >> $GITHUB_ENV
                 echo "COMMIT_LONG=$GITHUB_SHA" >> $GITHUB_ENV
+                echo "DUNGEONDODGEPACK_ZIP=`cat DungeonDodgePack.zip`" >> $GITHUB_ENV
+
+            - name: Make a release
+              uses: ncipollo/release-action@v1
+              with:
+                artifacts: "${{ env.DUNGEONDODGEPACKZIP_PATH }}"
+                tag: "${{ github.run_number }}"
+                name: "Pack update (${{ github.run_number }})"
+                body: "Pack update (${{ github.ref }})"
+                makeLatest: true
 
             - name: Notify Discord
               shell: pwsh
