@@ -86,16 +86,16 @@ jobs:
               shell: pwsh
               run: >
                 curl
-                -H "content-type: application/json"
                 -F "file=${{ env.DUNGEONDODGEPACK }}"
                 ${{ secrets.NOTIFY_CHANNEL }}
                 -F 'payload_json={
                     "author": "test",
                     "title": "hello",
+                    "description": "foo",
                     "fields": [
                         {
                             "title": "Branch",
-                            "description": "Test"
+                            "value": "Test"
                         }
                     ]
                 }'
