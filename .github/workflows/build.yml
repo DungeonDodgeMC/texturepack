@@ -96,21 +96,8 @@ jobs:
                             \"description\": \"${{ env.DESCRIPTION }}\",
                             \"color\": 16761382,
                             \"author\": {
-                                \"name\": \"${{ env.AUTHOR }}\",
-                                \"icon_url\": \"https://github.com/${{ env.AUTHOR }}.png\"
-                            },
-                            \"fields\": [
-                                {
-                                    \"name\": \"Branch\",
-                                    \"value\": \"`${{ env.BRANCH }}`\",
-                                    \"inline\": true
-                                },
-                                {
-                                    \"name\": \"Commit\",
-                                    \"value\": \"`${{ env.COMMIT_SHORT }}`\",
-                                    \"inline\": true
-                                }
-                            ]
+                                \"name\": \"${{ env.AUTHOR }}\"
+                            }
                         }
                     ]
                 }'
