@@ -102,6 +102,6 @@ jobs:
                     {
                         "name": "Download DungeonDodgePack",
                         "value": "[Link](https://github.com/DungeonDodgeMC/texturepack/releases/download/${{ github.run_number }}/DungeonDodgePack.zip)",
-                        "inline": true
+                        "inline": false
                     }]
                 }]}'
