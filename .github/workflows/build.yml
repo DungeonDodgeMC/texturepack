@@ -87,25 +87,30 @@ jobs:
               run: >
                 curl
                 -F "file=${{ env.DUNGEONDODGEPACK }}"
-                -F 'payload_json={\"embeds\": [{
-                    \"title\": \"Texture Pack Update\",
-                    \"description\": \"${{ env.DESCRIPTION }}\",
-                    \"color\": 16753664,
-                    \"author\": {
-                      \"name\": \"${{ env.AUTHOR }}\",
-                      \"icon_url\": \"https://github.com/${{ env.AUTHOR }}.png\"
-                    },
-                    \"fields\": [
-                      {
-                        \"name\": \"Branch\",
-                        \"value\": \"[`${{ env.BRANCH }}`](https://github.com/BasicallyIAmFox/Catrose/tree/${{ env.BRANCH }})\",
-                        \"inline\": true
-                      },
-                      {
-                        \"name\": \"Commit\",
-                        \"value\": \"[`${{ env.COMMIT_SHORT }}`](https://github.com/BasicallyIAmFox/Catrose/commit/${{ env.COMMIT_LONG }})\",
-                        \"inline\": true
-                      }
+                -F 'payload_json={
+                    \"embeds\":
+                    [
+                        {
+                            \"title\": \"Texture Pack Update\",
+                            \"description\": \"${{ env.DESCRIPTION }}\",
+                            \"color\": 16761382,
+                            \"author\": {
+                                \"name\": \"${{ env.AUTHOR }}\",
+                                \"icon_url\": \"https://github.com/${{ env.AUTHOR }}.png\"
+                            },
+                            \"fields\": [
+                                {
+                                    \"name\": \"Branch\",
+                                    \"value\": \"[`${{ env.BRANCH }}`](https://github.com/DungeonDodgeMC/texturepack/tree/${{ env.BRANCH }})\",
+                                    \"inline\": true
+                                },
+                                {
+                                    \"name\": "Commit",
+                                    \"value\": "[`${{ env.COMMIT_SHORT }}`](https://github.com/DungeonDodgeMC/texturepack/commit/${{ env.COMMIT_LONG }})\",
+                                    \"inline\": true
+                                }
+                            ]
+                        }
                     ]
-                }]}
-                ${{ secrets.NOTIFY_CHANNEL }}'
+                }]}'
+                ${{ secrets.NOTIFY_CHANNEL }}
