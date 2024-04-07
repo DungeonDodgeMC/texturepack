@@ -62,7 +62,7 @@ jobs:
             - name: Make a release
               uses: ncipollo/release-action@v1
               with:
-                artifacts: "dungeondodgepack"
+                artifacts: "DungeonDodgePack.zip"
                 tag: "${{ github.run_number }}"
                 name: "Pack update (${{ github.run_number }})"
                 body: "Pack update (${{ github.ref }})"
