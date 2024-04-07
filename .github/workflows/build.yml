@@ -19,6 +19,7 @@ jobs:
               run: |
                 echo "Zipping DungeonDodgePack"
                 7z a DungeonDodgePack.zip ./DungeonDodgePack/
+                move ./DungeonDodgePack/DungeonDodgePack.zip @$env:UserProfile/DungeonDodgePack/DungeonDodgePack.zip
 
     post:
         needs: build
@@ -39,7 +40,7 @@ jobs:
             - name: Make a release
               uses: ncipollo/release-action@v1
               with:
-                artifacts: "./DungeonDodgePack/DungeonDodgePack.zip"
+                artifacts: "DungeonDodgePack/DungeonDodgePack.zip"
                 tag: "${{ github.run_number }}"
                 name: "Pack update (${{ github.run_number }})"
                 body: "Pack update (${{ github.ref }})"
@@ -58,7 +59,7 @@ jobs:
               shell: pwsh
               run: >
                 curl
-                -F "file=@$env:UserProfile/./DungeonDodgePack/DungeonDodgePack.zip"
+                -F "file=@$env:UserProfile/DungeonDodgePack/DungeonDodgePack.zip"
                 ${{ secrets.NOTIFY_CHANNEL }}
                 -F 'payload_json={\"embeds\": [{
                     \"title\": \"Texture Pack Update\",
