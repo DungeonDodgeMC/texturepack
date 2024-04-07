@@ -87,7 +87,7 @@ jobs:
               run: >
                 curl
                 -F "file=${{ env.DUNGEONDODGEPACK }}"
-                -F 'payload_json={
+                -F "payload_json={
                     \"embeds\":
                     [
                         {
@@ -105,12 +105,12 @@ jobs:
                                     \"inline\": true
                                 },
                                 {
-                                    \"name\": "Commit",
-                                    \"value\": "[`${{ env.COMMIT_SHORT }}`](https://github.com/DungeonDodgeMC/texturepack/commit/${{ env.COMMIT_LONG }})\",
+                                    \"name\": \"Commit\",
+                                    \"value\": \"[`${{ env.COMMIT_SHORT }}`](https://github.com/DungeonDodgeMC/texturepack/commit/${{ env.COMMIT_LONG }})\",
                                     \"inline\": true
                                 }
                             ]
                         }
                     ]
-                }'
+                }"
                 ${{ secrets.NOTIFY_CHANNEL }}
