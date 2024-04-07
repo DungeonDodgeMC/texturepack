@@ -88,26 +88,6 @@ jobs:
                 curl
                 -F "file=${{ env.DUNGEONDODGEPACK }}"
                 ${{ secrets.NOTIFY_CHANNEL }}
-                -F 'payload_json={
-                    \"content\": \"\",
-                    \"embeds\":[{
-                    \"title\": \"Texture Pack Update\",
-                    \"description\": \"${{ env.DESCRIPTION }}\",
-                    \"color\": 16761382,
-                    \"author\": {
-                        \"name\": \"${{ env.AUTHOR }}\",
-                        \"icon_url\": \"https://github.com/${{ env.AUTHOR }}.png\"
-                    },
-                    \"fields\": [
-                        {
-                            \"name\": \"Branch\",
-                            \"value\": \"[`${{ env.BRANCH }}`](https://github.com/DungeonDodgeMC/texturepack/tree/${{ env.BRANCH }})\",
-                            \"inline\": true
-                        },
-                        {
-                            \"name\": \"Commit\",
-                            \"value\": \"[`${{ env.COMMIT_SHORT }}`](https://github.com/DungeonDodgeMC/texturepack/commit/${{ env.COMMIT_LONG }})\",
-                            \"inline\": true
-                        }
-                    ]
+                -F 'payload_json={\"embeds\":[{
+                    \"title\": \"Texture Pack Update\"
                 }]}'
