@@ -112,5 +112,5 @@ jobs:
                             ]
                         }
                     ]
-                }]}'
+                }'
                 ${{ secrets.NOTIFY_CHANNEL }}
