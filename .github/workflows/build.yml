@@ -87,7 +87,8 @@ jobs:
               run: >
                 curl
                 -F "file=${{ env.DUNGEONDODGEPACK }}"
-                -F "payload_json={
+                ${{ secrets.NOTIFY_CHANNEL }}
+                -F 'payload_json={
                     \"embeds\":
                     [
                         {
@@ -112,5 +113,4 @@ jobs:
                             ]
                         }
                     ]
-                }"
-                ${{ secrets.NOTIFY_CHANNEL }}
+                }'
