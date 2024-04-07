@@ -11,6 +11,9 @@ jobs:
     build:
         runs-on: windows-latest
 
+        name: Packing
+        permissions: write-all
+
         steps:
             - uses: actions/checkout@v3
 
@@ -19,6 +22,8 @@ jobs:
               run: |
                 echo "Zipping DungeonDodgePack"
                 7z a DungeonDodgePack.zip ./DungeonDodgePack/
+                
+                echo "Moving $(./DungeonDodgePack/DungeonDodgePack.zip) to $(@$env:UserProfile/DungeonDodgePack/DungeonDodgePack.zip)"
                 move ./DungeonDodgePack/DungeonDodgePack.zip @$env:UserProfile/DungeonDodgePack/DungeonDodgePack.zip
 
     post:
