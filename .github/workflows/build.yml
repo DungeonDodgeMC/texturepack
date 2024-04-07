@@ -38,7 +38,7 @@ jobs:
               env:
                   tag_timestamp: '${{ github.event.head_commit.timestamp }}'
               run: |
-                  $new_timestamp=$ENV:tag_timestamp.replace(':',';')
+                  $new_timestamp=$ENV:tag_timestamp).replace(':',' ')
 
             - name: Install Zip
               uses: montudor/action-zip@v1
