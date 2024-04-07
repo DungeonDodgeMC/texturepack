@@ -89,4 +89,4 @@ jobs:
                 -H "Content-Type: application/json"
                 -F "file=${{ env.DUNGEONDODGEPACK }}"
                 ${{ secrets.NOTIFY_CHANNEL }}
-                -d '{"username": "test", "content": "hello"}'
+                -F 'payload_json={"username": "test", "content": "hello"}'
