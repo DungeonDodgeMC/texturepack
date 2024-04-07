@@ -86,6 +86,7 @@ jobs:
               shell: pwsh
               run: >
                 curl
+                -H "Content-Type: application/json"
                 -F "file=${{ env.DUNGEONDODGEPACK }}"
                 ${{ secrets.NOTIFY_CHANNEL }}
-                -F embeds='[]'
+                -d '{"username": "test", "content": "hello"}'
