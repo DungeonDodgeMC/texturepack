@@ -34,6 +34,12 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
+            - name: Transform path
+              env:
+                  tag_timestamp: '${{ github.event.head_commit.timestamp }}'
+              run: |
+                  $new_timestamp=$ENV:tag_timestamp.replace(':',';')
+
             - name: Install Zip
               uses: montudor/action-zip@v1
 
@@ -41,7 +47,7 @@ jobs:
               uses: ncipollo/release-action@v1
               with:
                 artifacts: "../DungeonDodgePack.zip"
-                tag: "${{ github.event.head_commit.timestamp }}"
+                tag: "$new_timestamp"
                 name: "Pack update (${{ github.event.head_commit.timestamp }})"
                 body: "Pack update (${{ github.ref }})"
                 makeLatest: true
