@@ -19,6 +19,12 @@ jobs:
               run: |
                 echo "Zipping DungeonDodgePack"
                 7z a DungeonDodgePack.zip ./DungeonDodgePack/
+            
+            - name: Transform path
+              env:
+                  tag_timestamp: '${{ github.event.head_commit.timestamp }}'
+              run: |
+                $new_timestamp=$ENV:tag_timestamp.replace(':',' ')
 
     post:
         needs: build
@@ -33,12 +39,6 @@ jobs:
 
         steps:
             - uses: actions/checkout@v3
-
-            - name: Transform path
-              env:
-                  tag_timestamp: '${{ github.event.head_commit.timestamp }}'
-              run: |
-                $new_timestamp=$ENV:tag_timestamp.replace(":","")
 
             - name: Install Zip
               uses: montudor/action-zip@v1
