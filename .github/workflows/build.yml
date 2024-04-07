@@ -25,7 +25,6 @@ jobs:
         runs-on: ubuntu-latest
 
         name: Deploy to Github Releases
-
         permissions: write-all
 
         strategy:
@@ -60,7 +59,7 @@ jobs:
               run: >
                 curl
                 -F "modfile=@$env:UserProfile/DungeonDodgePack.zip"
-                ${{ secrets.NOTIFY_DISCORD }}
+                ${{ secrets.NOTIFY_CHANNEL }}
                 -F 'payload_json={\"embeds\": [{
                     \"title\": \"Texture Pack Update\",
                     \"description\": \"${{ env.DESCRIPTION }}\",
