@@ -19,13 +19,6 @@ jobs:
               run: |
                 echo "Zipping DungeonDodgePack"
                 7z a DungeonDodgePack.zip ./DungeonDodgePack/
-            
-            - name: Transform path
-              id: transform-path
-              env:
-                  tag_timestamp: '${{ github.event.head_commit.timestamp }}'
-              run: |
-                echo "new_timestamp=$ENV:tag_timestamp.replace(':',' ')" >> "$NEW_TIMESTAMP"
 
     post:
         needs: build
@@ -46,11 +39,8 @@ jobs:
 
             - name: Make a release
               uses: ncipollo/release-action@v1
-              env:
-                NEW_TIMESTAMP: ${{ steps.transform-path.outputs.NEW_TIMESTAMP }}
               with:
                 artifacts: "../DungeonDodgePack.zip"
-                tag: "$NEW_TIMESTAMP"
                 name: "Pack update (${{ github.event.head_commit.timestamp }})"
                 body: "Pack update (${{ github.ref }})"
                 makeLatest: true
