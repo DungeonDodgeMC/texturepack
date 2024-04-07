@@ -88,27 +88,23 @@ jobs:
                 curl
                 -F "file=${{ env.DUNGEONDODGEPACK }}"
                 ${{ secrets.NOTIFY_CHANNEL }}
-                -F 'payload_json={
-                    "embeds": [{
-                        "title": "Texture Pack update",
+                -F 'payload_json={"embeds": [{
+                    "title": "Texture Pack update",
 
-                        "author": {
-                            "name": "${{ env.AUTHOR }}",
-                            "icon_url": "https://github.com/${{ env.AUTHOR }}.png"
-                        },
-                        "description": "${{ env.DESCRIPTION }}",
+                    "author": {
+                        "name": "${{ env.AUTHOR }}",
+                        "icon_url": "https://github.com/${{ env.AUTHOR }}.png"
+                    },
+                    "description": "${{ env.DESCRIPTION }}",
 
-                        "fields": [
-                            {
-                                "name": "Branch",
-                                "value": "[`${{ env.BRANCH }}`](https://github.com/BasicallyIAmFox/Catrose/tree/${{ env.BRANCH }})",
-                                "inline": true
-                            },
-                            {
-                                "name": "Commit",
-                                "value": "[`${{ env.COMMIT_SHORT }}`](https://github.com/BasicallyIAmFox/Catrose/commit/${{ env.COMMIT_LONG }})",
-                                "inline": true
-                            }
-                        ]
+                    "fields": [{
+                        "name": "Branch",
+                        "value": "[`${{ env.BRANCH }}`](https://github.com/BasicallyIAmFox/Catrose/tree/${{ env.BRANCH }})",
+                        "inline": true
+                    },
+                    {
+                        "name": "Commit",
+                        "value": "[`${{ env.COMMIT_SHORT }}`](https://github.com/BasicallyIAmFox/Catrose/commit/${{ env.COMMIT_LONG }})",
+                        "inline": true
                     }]
-                }'
+                }]}'
