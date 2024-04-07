@@ -66,11 +66,6 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             
-            - name: Download DungeonDodgePack
-              uses: actions/download-artifact@v4
-              with:
-                name: dungeondodgepack
-
             - name: Retrieve Embed Data
               shell: bash
               run: |
@@ -79,14 +74,11 @@ jobs:
                 echo "BRANCH=${{ github.head_ref || github.ref_name }}" >> $GITHUB_ENV
                 echo "COMMIT_SHORT=$(git rev-parse --short "$GITHUB_SHA")" >> $GITHUB_ENV
                 echo "COMMIT_LONG=$GITHUB_SHA" >> $GITHUB_ENV
-    
-                echo "DUNGEONDODGEPACK=$(`cat DungeonDodgePack.zip`)" >> $GITHUB_ENV
                 
             - name: Notify Discord
               shell: pwsh
               run: >
                 curl
-                -F "file=${{ env.DUNGEONDODGEPACK }}"
                 ${{ secrets.NOTIFY_CHANNEL }}
                 -F 'payload_json={"embeds": [{
                     "title": "Texture Pack update",
@@ -106,5 +98,11 @@ jobs:
                         "name": "Commit",
                         "value": "[`${{ env.COMMIT_SHORT }}`](https://github.com/DungeonDodgeMC/texturepack/commit/${{ env.COMMIT_LONG }})",
                         "inline": true
+                    }],
+
+                    "attachments": [{
+                        "id": 0,
+                        "filename": "DungeonDodgePack.zip",
+                        "url": "https://github.com/DungeonDodgeMC/texturepack/releases/download/${{ github.run_number }}/DungeonDodgePack.zip"
                     }]
                 }]}'
