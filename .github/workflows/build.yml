@@ -102,12 +102,12 @@ jobs:
                             \"fields\": [
                                 {
                                     \"name\": \"Branch\",
-                                    \"value\": \"[`${{ env.BRANCH }}`](https://github.com/DungeonDodgeMC/texturepack/tree/${{ env.BRANCH }})\",
+                                    \"value\": \"`${{ env.BRANCH }}`\",
                                     \"inline\": true
                                 },
                                 {
                                     \"name\": \"Commit\",
-                                    \"value\": \"[`${{ env.COMMIT_SHORT }}`](https://github.com/DungeonDodgeMC/texturepack/commit/${{ env.COMMIT_LONG }})\",
+                                    \"value\": \"`${{ env.COMMIT_SHORT }}`\",
                                     \"inline\": true
                                 }
                             ]
