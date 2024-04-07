@@ -89,13 +89,15 @@ jobs:
                 -F "file=${{ env.DUNGEONDODGEPACK }}"
                 ${{ secrets.NOTIFY_CHANNEL }}
                 -F 'payload_json={
-                    "author": "test",
-                    "title": "hello",
-                    "description": "foo",
-                    "fields": [
-                        {
-                            "title": "Branch",
-                            "value": "Test"
-                        }
-                    ]
+                    "embeds": [{
+                        "author": "test",
+                        "title": "hello",
+                        "description": "foo",
+                        "fields": [
+                            {
+                                "title": "Branch",
+                                "value": "Test"
+                            }
+                        ]
+                    }]
                 }'
