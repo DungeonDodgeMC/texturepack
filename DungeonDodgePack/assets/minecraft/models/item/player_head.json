@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:item/template_skull",
+  
+  "overrides": [
+    { "predicate": { "custom_model_data": 4000000 }, "model": "dungeondodge:item/compressor_v1" },
+    { "predicate": { "custom_model_data": 4000001 }, "model": "dungeondodge:item/compressor_v2" },
+    { "predicate": { "custom_model_data": 4000002 }, "model": "dungeondodge:item/compressor_v3" },
+    { "predicate": { "custom_model_data": 4000003 }, "model": "minecraft:item/template_skull" },
+
+    { "predicate": { "custom_model_data": 4000030 }, "model": "dungeondodge:item/deleter_v1" },
+    { "predicate": { "custom_model_data": 4000031 }, "model": "dungeondodge:item/deleter_v2" },
+    { "predicate": { "custom_model_data": 4000032 }, "model": "dungeondodge:item/deleter_v3" },
+    { "predicate": { "custom_model_data": 4000033 }, "model": "minecraft:item/template_skull" },
+
+    { "predicate": { "custom_model_data": 4000039 }, "model": "dungeondodge:item/deleter_v4" },
+    { "predicate": { "custom_model_data": 4000040 }, "model": "minecraft:item/template_skull" },
+
+    { "predicate": { "custom_model_data": 4000067 }, "model": "dungeondodge:item/compressor_v4" },
+    { "predicate": { "custom_model_data": 4000068 }, "model": "minecraft:item/template_skull" },
+
+    { "predicate": { "custom_model_data": 5000004 }, "model": "dungeondodge:item/hard_rock" },
+    { "predicate": { "custom_model_data": 5000005 }, "model": "minecraft:item/template_skull" },
+
+    { "predicate": { "custom_model_data": 5000060 }, "model": "dungeondodge:item/coin_pouch" },
+    { "predicate": { "custom_model_data": 5000061 }, "model": "minecraft:item/template_skull" },
+
+    { "predicate": { "custom_model_data": 5000079 }, "model": "dungeondodge:item/copper_reel" },
+    { "predicate": { "custom_model_data": 5000080 }, "model": "dungeondodge:item/silver_reel" },
+    { "predicate": { "custom_model_data": 5000081 }, "model": "dungeondodge:item/golden_reel" },
+    { "predicate": { "custom_model_data": 5000082 }, "model": "minecraft:item/template_skull" },
+
+    { "predicate": { "custom_model_data": 5000088 }, "model": "dungeondodge:item/hydrous_shard" },
+    { "predicate": { "custom_model_data": 5000089 }, "model": "minecraft:item/template_skull" },
+
+    { "predicate": { "custom_model_data": 5000090 }, "model": "dungeondodge:item/diamond_reel" },
+    { "predicate": { "custom_model_data": 5000091 }, "model": "minecraft:item/template_skull" },
+
+    { "predicate": { "custom_model_data": 5000096 }, "model": "dungeondodge:item/arcane_gemstone" },
+    { "predicate": { "custom_model_data": 5000097 }, "model": "dungeondodge:item/super_singularity_core" },
+    { "predicate": { "custom_model_data": 5000098 }, "model": "minecraft:item/template_skull" },
+
+    { "predicate": { "custom_model_data": 5700047 }, "model": "dungeondodge:item/experience_ornament" },
+    { "predicate": { "custom_model_data": 5700048 }, "model": "minecraft:item/template_skull" },
+
+    { "predicate": { "custom_model_data": 5700058 }, "model": "dungeondodge:item/gift_compressor" },
+    { "predicate": { "custom_model_data": 5700059 }, "model": "minecraft:item/template_skull" }
+  ]
+}
