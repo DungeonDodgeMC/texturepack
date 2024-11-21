@@ -10,7 +10,7 @@
   },
  
   "overrides": [
-    { "predicate": { "custom_model_data": 5000048 }, "model": "dungeondodge:item/bound_gem_cluster" },
+    { "predicate": { "custom_model_data": 5000048 }, "model": "dungeondodge:item/ice/weapons/melee/bound_gem_cluster" },
     { "predicate": { "custom_model_data": 5000049 }, "model": "minecraft:item/amethyst_cluster" }
   ]
 }

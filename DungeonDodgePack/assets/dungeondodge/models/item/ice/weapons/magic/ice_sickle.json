@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "dungeondodge:item/ice_sickle"
+    "layer0": "dungeondodge:item/ice/weapons/magic/ice_sickle"
   }
 }

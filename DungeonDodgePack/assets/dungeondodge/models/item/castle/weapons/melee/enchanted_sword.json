@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "dungeondodge:item/enchanted_sword"
+    "layer0": "dungeondodge:item/castle/weapons/melee/enchanted_sword"
   }
 }

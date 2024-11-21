@@ -5,7 +5,7 @@
   },
  
   "overrides": [
-    { "predicate": { "custom_model_data": 1000008 }, "model": "dungeondodge:item/birch_wood_sword" },
+    { "predicate": { "custom_model_data": 1000008 }, "model": "dungeondodge:item/castle/weapons/melee/birch_wood_sword" },
     { "predicate": { "custom_model_data": 1000009 }, "model": "minecraft:item/wooden_sword" }
   ]
 }

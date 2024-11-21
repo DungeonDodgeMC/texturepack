@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/copper_reel"
+    "layer0": "dungeondodge:item/fishing/materials/reels/copper_reel"
   }
 }

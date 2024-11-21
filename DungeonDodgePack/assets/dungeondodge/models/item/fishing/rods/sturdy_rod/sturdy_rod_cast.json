@@ -1,6 +1,6 @@
 {
     "parent": "dungeondodge:item/sturdy_rod",
     "textures": {
-        "layer0": "dungeondodge:item/sturdy_rod_cast"
+        "layer0": "dungeondodge:item/fishing/rods/sturdy_rod/sturdy_rod_cast"
     }
 }

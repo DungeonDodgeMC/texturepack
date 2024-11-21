@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/silver_reel"
+    "layer0": "dungeondodge:item/fishing/materials/reels/silver_reel"
   }
 }

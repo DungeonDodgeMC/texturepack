@@ -23,6 +23,6 @@
     }
   },
   "textures": {
-    "layer0": "dungeondodge:item/icicle_blade"
+    "layer0": "dungeondodge:item/ice/weapons/melee/icicle_blade"
   }
 }

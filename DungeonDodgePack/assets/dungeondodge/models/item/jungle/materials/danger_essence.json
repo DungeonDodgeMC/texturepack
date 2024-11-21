@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/danger_essence"
+    "layer0": "dungeondodge:item/jungle/materials/danger_essence"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/rock_tome"
+    "layer0": "dungeondodge:item/castle/weapons/magic/rock_tome"
   }
 }

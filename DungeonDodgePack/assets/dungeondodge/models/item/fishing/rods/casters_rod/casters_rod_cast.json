@@ -1,6 +1,6 @@
 {
     "parent": "dungeondodge:item/casters_rod",
     "textures": {
-        "layer0": "dungeondodge:item/casters_rod_cast"
+        "layer0": "dungeondodge:item/fishing/rods/casters_rod/casters_rod_cast"
     }
 }

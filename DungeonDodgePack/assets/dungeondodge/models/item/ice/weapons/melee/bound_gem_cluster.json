@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/bound_gem_cluster"
+    "layer0": "dungeondodge:item/ice/weapons/melee/bound_gem_cluster"
   }
 }

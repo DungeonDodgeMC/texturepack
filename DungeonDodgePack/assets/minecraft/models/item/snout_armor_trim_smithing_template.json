@@ -5,7 +5,7 @@
   },
  
   "overrides": [
-    { "predicate": { "custom_model_data": 1000040 }, "model": "dungeondodge:item/rock_tome" },
+    { "predicate": { "custom_model_data": 1000040 }, "model": "dungeondodge:item/castle/weapons/magic/rock_tome" },
     { "predicate": { "custom_model_data": 1000041 }, "model": "minecraft:item/snout_armor_trim_smithing_template" }
   ]
 }

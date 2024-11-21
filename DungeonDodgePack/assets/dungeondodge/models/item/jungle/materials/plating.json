@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/plating"
+    "layer0": "dungeondodge:item/jungle/materials/plating"
   }
 }

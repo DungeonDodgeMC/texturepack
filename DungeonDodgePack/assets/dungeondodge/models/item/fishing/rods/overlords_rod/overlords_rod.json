@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld_rod",
     "textures": {
-        "layer0": "dungeondodge:item/overlords_rod"
+        "layer0": "dungeondodge:item/fishing/rods/overlords_rod/overlords_rod"
     }
 }

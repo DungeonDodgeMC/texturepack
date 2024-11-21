@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "dungeondodge:item/anubis"
+    "layer0": "dungeondodge:item/desert/weapons/melee/anubis"
   }
 }

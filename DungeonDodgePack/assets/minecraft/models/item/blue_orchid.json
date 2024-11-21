@@ -5,7 +5,7 @@
   },
  
   "overrides": [
-    { "predicate": { "custom_model_data": 5000019 }, "model": "dungeondodge:item/frozen_flower" },
+    { "predicate": { "custom_model_data": 5000019 }, "model": "dungeondodge:item/ice/materials/frozen_flower" },
     { "predicate": { "custom_model_data": 5000020 }, "model": "minecraft:item/blue_orchid" }
   ]
 }

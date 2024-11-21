@@ -1,6 +1,6 @@
 {
     "parent": "dungeondodge:item/poseidon",
     "textures": {
-        "layer0": "dungeondodge:item/poseidon_cast"
+        "layer0": "dungeondodge:item/fishing/rods/poseidon/poseidon_cast"
     }
 }

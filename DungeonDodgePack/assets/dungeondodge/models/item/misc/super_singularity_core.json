@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/super_singularity_core"
+    "layer0": "dungeondodge:item/misc/super_singularity_core"
   }
 }

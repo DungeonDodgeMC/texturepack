@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/jungle_tome"
+    "layer0": "dungeondodge:item/jungle/weapons/magic/jungle_tome"
   }
 }

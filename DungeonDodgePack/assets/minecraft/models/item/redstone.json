@@ -5,7 +5,7 @@
   },
  
   "overrides": [
-    { "predicate": { "custom_model_data": 5000005 }, "model": "dungeondodge:item/monster_essence" },
+    { "predicate": { "custom_model_data": 5000005 }, "model": "dungeondodge:item/castle/materials/monster_essence" },
     { "predicate": { "custom_model_data": 5000006 }, "model": "minecraft:item/redstone" }
   ]
 }

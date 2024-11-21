@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/bow",
     "textures": {
-        "layer0": "dungeondodge:item/master_hunters_bow_pulling_2"
+        "layer0": "dungeondodge:item/castle/weapons/ranged/master_hunters_bow/master_hunters_bow_pulling_2"
     }
 }

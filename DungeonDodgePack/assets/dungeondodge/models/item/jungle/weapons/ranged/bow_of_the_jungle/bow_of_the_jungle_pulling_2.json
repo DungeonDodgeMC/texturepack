@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/bow",
     "textures": {
-        "layer0": "dungeondodge:item/bow_of_the_jungle_pulling_2"
+        "layer0": "dungeondodge:item/jungle/weapons/ranged/bow_of_the_jungle/bow_of_the_jungle_pulling_2"
     }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/lizard_scale"
+    "layer0": "dungeondodge:item/jungle/materials/lizard_scale"
   }
 }

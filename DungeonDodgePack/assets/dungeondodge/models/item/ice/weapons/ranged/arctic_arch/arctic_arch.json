@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/bow",
     "textures": {
-        "layer0": "dungeondodge:item/arctic_arch"
+        "layer0": "dungeondodge:item/ice/weapons/ranged/arctic_arch/arctic_arch"
     }
 }

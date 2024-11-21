@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/coin_pouch"
+    "layer0": "dungeondodge:item/misc/coin_pouch"
   }
 }

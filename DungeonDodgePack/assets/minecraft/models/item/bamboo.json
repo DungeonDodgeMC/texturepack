@@ -5,7 +5,7 @@
   },
  
   "overrides": [
-    { "predicate": { "custom_model_data": 5000055 }, "model": "dungeondodge:item/bamboo_blaster" },
+    { "predicate": { "custom_model_data": 5000055 }, "model": "dungeondodge:item/jungle/weapons/magic/bamboo_blaster" },
     { "predicate": { "custom_model_data": 5000056 }, "model": "minecraft:item/bamboo" }
   ]
 }

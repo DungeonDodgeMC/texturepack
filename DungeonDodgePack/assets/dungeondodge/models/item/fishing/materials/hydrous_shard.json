@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/hydrous_shard"
+    "layer0": "dungeondodge:item/fishing/materials/hydrous_shard"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/life_essence"
+    "layer0": "dungeondodge:item/ice/materials/life_essence"
   }
 }

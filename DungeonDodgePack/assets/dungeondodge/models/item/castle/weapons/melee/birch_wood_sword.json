@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "dungeondodge:item/birch_wood_sword"
+    "layer0": "dungeondodge:item/castle/weapons/melee/birch_wood_sword"
   }
 }

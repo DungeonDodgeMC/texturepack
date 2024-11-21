@@ -1,6 +1,6 @@
 {
     "parent": "dungeondodge:item/anglers_dream",
     "textures": {
-        "layer0": "dungeondodge:item/anglers_dream_cast"
+        "layer0": "dungeondodge:item/fishing/rods/anglers_dream/anglers_dream_cast"
     }
 }

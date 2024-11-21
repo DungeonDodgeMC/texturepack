@@ -5,7 +5,7 @@
   },
  
   "overrides": [
-    { "predicate": { "custom_model_data": 5000053 }, "model": "dungeondodge:item/glowing_flower" },
+    { "predicate": { "custom_model_data": 5000053 }, "model": "dungeondodge:item/ice/materials/glowing_flower" },
     { "predicate": { "custom_model_data": 5000054 }, "model": "minecraft:item/orange_tulip" }
   ]
 }

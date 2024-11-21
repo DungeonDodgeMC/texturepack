@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "dungeondodge:item/gold_shieldblade"
+    "layer0": "dungeondodge:item/jungle/weapons/melee/gold_shieldblade"
   }
 }

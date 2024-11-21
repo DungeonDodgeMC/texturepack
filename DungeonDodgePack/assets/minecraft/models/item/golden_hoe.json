@@ -5,7 +5,7 @@
   },
  
   "overrides": [
-    { "predicate": { "custom_model_data": 5000119 }, "model": "dungeondodge:item/anubis" },
+    { "predicate": { "custom_model_data": 5000119 }, "model": "dungeondodge:item/desert/weapons/melee/anubis" },
     { "predicate": { "custom_model_data": 5000120 }, "model": "minecraft:item/golden_hoe" }
   ]
 }

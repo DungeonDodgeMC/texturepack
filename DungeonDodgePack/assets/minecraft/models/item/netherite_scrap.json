@@ -5,7 +5,7 @@
   },
  
   "overrides": [
-    { "predicate": { "custom_model_data": 5000056 }, "model": "dungeondodge:item/plating" },
+    { "predicate": { "custom_model_data": 5000056 }, "model": "dungeondodge:item/jungle/materials/plating" },
     { "predicate": { "custom_model_data": 5000057 }, "model": "minecraft:item/netherite_scrap" }
   ]
 }

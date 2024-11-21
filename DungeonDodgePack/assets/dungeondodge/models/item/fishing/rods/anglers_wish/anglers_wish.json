@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld_rod",
     "textures": {
-        "layer0": "dungeondodge:item/anglers_wish"
+        "layer0": "dungeondodge:item/fishing/rods/anglers_wish/anglers_wish"
     }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "dungeondodge:item/frost_steel_waraxe"
+    "layer0": "dungeondodge:item/ice/weapons/melee/frost_steel_waraxe"
   }
 }

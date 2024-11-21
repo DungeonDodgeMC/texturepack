@@ -5,7 +5,7 @@
   },
  
   "overrides": [
-    { "predicate": { "custom_model_data": 5000020 }, "model": "dungeondodge:item/life_essence" },
+    { "predicate": { "custom_model_data": 5000020 }, "model": "dungeondodge:item/ice/materials/life_essence" },
     { "predicate": { "custom_model_data": 5000021 }, "model": "minecraft:item/sugar" }
   ]
 }

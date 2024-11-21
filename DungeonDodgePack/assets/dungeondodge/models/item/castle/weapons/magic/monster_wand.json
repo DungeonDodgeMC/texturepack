@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "dungeondodge:item/monster_wand"
+    "layer0": "dungeondodge:item/castle/weapons/magic/monster_wand"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/experience_ornament"
+    "layer0": "dungeondodge:item/misc/experience_cubes/experience_ornament"
   }
 }

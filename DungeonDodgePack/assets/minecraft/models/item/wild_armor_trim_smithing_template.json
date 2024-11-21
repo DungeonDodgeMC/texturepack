@@ -5,7 +5,7 @@
   },
  
   "overrides": [
-    { "predicate": { "custom_model_data": 1000044 }, "model": "dungeondodge:item/jungle_tome" },
+    { "predicate": { "custom_model_data": 1000044 }, "model": "dungeondodge:item/jungle/weapons/magic/jungle_tome" },
     { "predicate": { "custom_model_data": 1000045 }, "model": "minecraft:item/wild_armor_trim_smithing_template" }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "dungeondodge:item/dungeon_raiders_axe"
+    "layer0": "dungeondodge:item/castle/weapons/melee/dungeon_raiders_axe"
   }
 }

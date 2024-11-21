@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/frost_tome"
+    "layer0": "dungeondodge:item/ice/weapons/magic/frost_tome"
   }
 }

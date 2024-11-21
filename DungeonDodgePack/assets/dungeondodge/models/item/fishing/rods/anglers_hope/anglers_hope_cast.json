@@ -1,6 +1,6 @@
 {
     "parent": "dungeondodge:item/anglers_hope",
     "textures": {
-        "layer0": "dungeondodge:item/anglers_hope_cast"
+        "layer0": "dungeondodge:item/fishing/rods/anglers_hope/anglers_hope_cast"
     }
 }

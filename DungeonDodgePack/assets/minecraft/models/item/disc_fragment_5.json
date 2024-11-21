@@ -5,7 +5,7 @@
   },
  
   "overrides": [
-    { "predicate": { "custom_model_data": 5000054 }, "model": "dungeondodge:item/lizard_scale" },
+    { "predicate": { "custom_model_data": 5000054 }, "model": "dungeondodge:item/jungle/materials/lizard_scale" },
     { "predicate": { "custom_model_data": 5000055 }, "model": "minecraft:item/disc_fragment_5" }
   ]
 }

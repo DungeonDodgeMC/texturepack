@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "dungeondodge:item/ceremonial_dagger"
+    "layer0": "dungeondodge:item/castle/weapons/melee/ceremonial_dagger"
   }
 }

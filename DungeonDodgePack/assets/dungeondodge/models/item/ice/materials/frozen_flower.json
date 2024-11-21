@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/frozen_flower"
+    "layer0": "dungeondodge:item/ice/materials/frozen_flower"
   }
 }

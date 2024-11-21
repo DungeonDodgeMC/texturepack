@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dungeondodge:item/monster_essence"
+    "layer0": "dungeondodge:item/castle/materials/monster_essence"
   }
 }

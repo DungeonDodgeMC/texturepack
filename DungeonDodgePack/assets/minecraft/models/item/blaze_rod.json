@@ -5,7 +5,7 @@
   },
  
   "overrides": [
-    { "predicate": { "custom_model_data": 1000015 }, "model": "dungeondodge:item/monster_wand" },
+    { "predicate": { "custom_model_data": 1000015 }, "model": "dungeondodge:item/castle/weapons/magic/monster_wand" },
     { "predicate": { "custom_model_data": 1000016 }, "model": "minecraft:item/blaze_rod" }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "dungeondodge:item/bone_blade"
+    "layer0": "dungeondodge:item/castle/weapons/melee/bone_blade"
   }
 }
