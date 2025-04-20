@@ -8,10 +8,13 @@
     { "predicate": { "custom_model_data": 1000006  }, "model": "dungeondodge:item/barbarian_sword" },
     { "predicate": { "custom_model_data": 1000007  }, "model": "minecraft:item/golden_sword" },
 
-    { "predicate": { "custom_model_data": 10000036 }, "model": "dungeondodge:item/ceremonial_dagger" },
-    { "predicate": { "custom_model_data": 10000037 }, "model": "minecraft:item/golden_sword" },
+    { "predicate": { "custom_model_data": 1000036 }, "model": "dungeondodge:item/ceremonial_dagger" },
+    { "predicate": { "custom_model_data": 1000037 }, "model": "minecraft:item/golden_sword" },
 
-    { "predicate": { "custom_model_data": 10000052 }, "model": "dungeondodge:item/gold_shieldblade" },
-    { "predicate": { "custom_model_data": 10000053 }, "model": "minecraft:item/golden_sword" }
+    { "predicate": { "custom_model_data": 1000052 }, "model": "dungeondodge:item/gold_shieldblade" },
+    { "predicate": { "custom_model_data": 1000053 }, "model": "minecraft:item/golden_sword" },
+
+    { "predicate": { "custom_model_data": 1000058 }, "model": "dungeondodge:item/blade_of_the_dunes" },
+    { "predicate": { "custom_model_data": 1000059 }, "model": "minecraft:item/golden_sword" }
   ]
 }

@@ -6,6 +6,9 @@
  
   "overrides": [
     { "predicate": { "custom_model_data": 1000015 }, "model": "dungeondodge:item/monster_wand" },
-    { "predicate": { "custom_model_data": 1000016 }, "model": "minecraft:item/blaze_rod" }
+    { "predicate": { "custom_model_data": 1000016 }, "model": "minecraft:item/blaze_rod" },
+
+    { "predicate": { "custom_model_data": 1000063 }, "model": "dungeondodge:item/heatbenders_staff" },
+    { "predicate": { "custom_model_data": 1000064 }, "model": "minecraft:item/blaze_rod" }
   ]
 }

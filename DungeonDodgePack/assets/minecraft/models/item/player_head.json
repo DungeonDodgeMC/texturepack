@@ -2,6 +2,9 @@
   "parent": "minecraft:item/template_skull",
   
   "overrides": [
+    { "predicate": { "custom_model_data": 1000073 }, "model": "dungeondodge:item/bloodmagic_orb" },
+    { "predicate": { "custom_model_data": 1000074 }, "model": "minecraft:item/template_skull" },
+
     { "predicate": { "custom_model_data": 4000000 }, "model": "dungeondodge:item/compressor_v1" },
     { "predicate": { "custom_model_data": 4000001 }, "model": "dungeondodge:item/compressor_v2" },
     { "predicate": { "custom_model_data": 4000002 }, "model": "dungeondodge:item/compressor_v3" },

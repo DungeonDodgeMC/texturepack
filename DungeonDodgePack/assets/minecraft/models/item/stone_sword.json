@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "minecraft:item/stone_sword"
+  },
+ 
+  "overrides": [
+    { "predicate": { "custom_model_data": 1000007 }, "model": "dungeondodge:item/ritual_blade" },
+    { "predicate": { "custom_model_data": 1000008 }, "model": "minecraft:item/stone_sword" },
+
+    { "predicate": { "custom_model_data": 1000009 }, "model": "dungeondodge:item/stone_dagger" },
+    { "predicate": { "custom_model_data": 1000010 }, "model": "minecraft:item/stone_sword" }
+  ]
+}

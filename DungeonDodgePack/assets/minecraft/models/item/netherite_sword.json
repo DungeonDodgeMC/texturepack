@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "minecraft:item/netherite_sword"
+  },
+ 
+  "overrides": [
+    { "predicate": { "custom_model_data": 1000060  }, "model": "dungeondodge:item/nirvana" },
+    { "predicate": { "custom_model_data": 1000061  }, "model": "minecraft:item/netherite_sword" },
+
+    { "predicate": { "custom_model_data": 1000071 }, "model": "dungeondodge:item/berserkers_longsword" },
+    { "predicate": { "custom_model_data": 1000072 }, "model": "minecraft:item/netherite_sword" }
+  ]
+}

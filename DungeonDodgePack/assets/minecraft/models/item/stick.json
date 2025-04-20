@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/stick"
+  },
+ 
+  "overrides": [
+    { "predicate": { "custom_model_data": 1000013 }, "model": "dungeondodge:item/sturdy_wand" },
+    { "predicate": { "custom_model_data": 1000014 }, "model": "minecraft:item/stick" }
+  ]
+}

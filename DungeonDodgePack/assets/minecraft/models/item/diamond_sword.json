@@ -9,6 +9,9 @@
     { "predicate": { "custom_model_data": 1000004 }, "model": "minecraft:item/diamond_sword" },
 
     { "predicate": { "custom_model_data": 1000021 }, "model": "dungeondodge:item/icicle_blade"    },
-    { "predicate": { "custom_model_data": 1000022 }, "model": "minecraft:item/diamond_sword" }
+    { "predicate": { "custom_model_data": 1000022 }, "model": "minecraft:item/diamond_sword" },
+
+    { "predicate": { "custom_model_data": 1000070 }, "model": "dungeondodge:item/pharaohs_blade_of_power" },
+    { "predicate": { "custom_model_data": 1000071 }, "model": "minecraft:item/diamond_sword" }
   ]
 }

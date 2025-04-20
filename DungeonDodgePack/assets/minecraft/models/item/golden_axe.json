@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "minecraft:item/golden_axe"
+  },
+ 
+  "overrides": [
+    { "predicate": { "custom_model_data": 1000064 }, "model": "dungeondodge:item/axe_of_the_sands" },
+    { "predicate": { "custom_model_data": 1000065 }, "model": "minecraft:item/golden_axe" }
+  ]
+}

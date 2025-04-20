@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/dune_armor_trim_smithing_template"
+  },
+ 
+  "overrides": [
+    { "predicate": { "custom_model_data": 1000061 }, "model": "dungeondodge:item/tome_of_the_sands" },
+    { "predicate": { "custom_model_data": 1000062 }, "model": "minecraft:item/dune_armor_trim_smithing_template" }
+  ]
+}

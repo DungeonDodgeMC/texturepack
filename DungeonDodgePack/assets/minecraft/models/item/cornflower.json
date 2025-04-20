@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:block/cornflower"
+  },
+ 
+  "overrides": [
+    { "predicate": { "custom_model_data": 1000017 }, "model": "dungeondodge:item/flower_of_frost" },
+    { "predicate": { "custom_model_data": 1000018 }, "model": "minecraft:item/cornflower" }
+  ]
+}
