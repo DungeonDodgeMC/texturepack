@@ -5,6 +5,11 @@
   },
  
   "overrides": [
+    { "predicate": { "custom_model_data": 2100016 }, "model": "dungeondodge:item/emerald_drill" },
+    { "predicate": { "custom_model_data": 2100017 }, "model": "dungeondodge:item/diamond_drill" },
+    { "predicate": { "custom_model_data": 2100018 }, "model": "dungeondodge:item/rose_quartz_drill" },
+    { "predicate": { "custom_model_data": 2100019 }, "model": "minecraft:item/disc_fragment_5" },
+
     { "predicate": { "custom_model_data": 5000054 }, "model": "dungeondodge:item/lizard_scale" },
     { "predicate": { "custom_model_data": 5000055 }, "model": "minecraft:item/disc_fragment_5" }
   ]

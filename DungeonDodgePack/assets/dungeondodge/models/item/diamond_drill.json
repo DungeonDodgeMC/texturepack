@@ -1,0 +1,6 @@
+{
+  "parent": "dungeondodge:item/template/handheld_drill",
+  "textures": {
+    "layer0": "dungeondodge:item/diamond_drill"
+  }
+}
